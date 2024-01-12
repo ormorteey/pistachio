@@ -1,0 +1,1 @@
+qoma     29880  100  0.2   0  19 RN   1-07:38:11   1-07:38:10   Jan 10 python script/analyze.py --save_dir save_output --save --use_checkpoint --data_filename plate_percentages.csv --config config/config_pistachio.yaml --combine --num_combine 3 --categorical

@@ -1,0 +1,2 @@
+source ../peterhall-venv/bin/activate
+python script/analyze.py --save_dir save_output --save --use_checkpoint --data_filename "plate_percentages.csv" --config config/config_pistachio.yaml --combine --num_combine 3 --categorical

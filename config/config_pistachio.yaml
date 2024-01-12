@@ -1,0 +1,47 @@
+# config.yaml
+
+# File reading
+file_dir: "data/CT2-A1-A4-A9-full"
+
+# Cluster Center
+do_clustering: true
+n_cluster: 5
+leaf_label_col: "Pistachio_Index"
+response_color_cols: "Status Color"
+weights: null
+qtl: null
+add_noise: true
+drop_duplicates: false
+plot_dendogram: true
+cluster_center_method: "random"
+bins: 3
+
+# Run Experiment settings
+response_col: "Status"
+n_samples: 500
+alpha: 0.1
+sigf_col:
+  # - alpha_sigf
+  - "min_se_sigf"
+  - "ent(Y|x) < ent(Y)"
+not_pred_cols:
+  - "Pistachio_Index"
+  - "Status"
+  - "Status Color"
+img_file_type:
+  - "jpg"
+  - "png"
+img_save_type: "png"
+spreadsheet_file_type: "xlsx"
+filter_response: false
+valid_response_list: null
+  # - Angry
+verbose: false
+show_all_labels: false
+only_sigf: true
+generate_files_only: false
+do_summary: true
+recursion_limit: 1000000
+
+# Server
+max_workers: 20
